@@ -33,8 +33,8 @@ def convert_string(sequence: str) -> str:
     return converted_sequence
 
 
-def part_2(file_name):
-    with open("input.txt", 'r') as f:
+def part_2(file_name: str):
+    with open(file_name, 'r') as f:
         sum_of_all = 0
         for line in f:
             line = convert_string(line)
@@ -56,5 +56,5 @@ def part_1(file_name: str) -> int:
         return sum_of_all
 
 
-print(f"Part 1 answer is: {part_1('input.txt')}")
-print(f"Part 2 answer is: {part_2('input.txt')}")
+print(f"Part 1 answer is: {part_1('2023/Day_1/input.txt')}")
+print(f"Part 2 answer is: {part_2('2023/Day_1/input.txt')}")
